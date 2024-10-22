@@ -1,0 +1,78 @@
+/* RoomPage.css */
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.room-page {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Add padding for some spacing */
+    position: relative; /* Allow absolute positioning */
+    background-image: url('/public/vs.jpg'); /* Update the path as necessary */
+    background-size: cover; /* Cover the entire container */
+    background-position: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between; /* Space the score images */
+    width: 100%; /* Full width for scoreboard */
+    position: absolute; /* Absolute positioning for scoreboard */
+    top: 20px; /* Space from the top */
+    padding: 0 20px; /* Padding for score images */
+}
+
+.score-image {
+    width: 50px; /* Adjust size of score images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.results {
+    display: flex;
+    justify-content: space-between; /* Space between my choice and opponent's choice */
+    margin-top: 20px;
+    width: 100%; /* Full width for results */
+}
+
+.my-choice, .opponent-choice {
+    padding: 200px;
+    margin: 10px;
+    width: 55%; /* Adjust width for each choice */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice-image {
+    width: 100px; /* Set a fixed width for choice images */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space above images */
+    display: block; /* Center the image in the div */
+}
+
+.button-group {
+    position: relative; /* Position images at the bottom */
+    bottom: 20px; /* Space from the bottom */
+    display: flex;
+    justify-content: center; /* Center the button group */
+    width: 100%; /* Full width for the button group */
+}
+
+.choice-button {
+    width: 70px; /* Smaller button size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between images */
+    cursor: pointer; /* Indicate clickable */
+}
